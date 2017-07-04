@@ -1,0 +1,81 @@
+  * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+  html,
+  body {
+      width: 100%;
+      height: 100%;
+  }
+
+  img {
+      display: block;
+      width: 1440px;
+      margin: 0 auto;
+  }
+  /*遮罩部分*/
+
+  .shadow {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 100%;
+  }
+
+  .shadow .box {
+      width: 1440px;
+      height: 860px;
+      position: relative;
+      margin: 0 auto;
+  }
+
+  .shadow .person {
+      width: 200px;
+      height: 261px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -200px;
+      background: url(../../images/img13.png) no-repeat;
+      .chart {
+          width: 380px;
+          height: 260px;
+          background: url(../../images/img12.png) no-repeat;
+          position: relative;
+          top: -102px;
+          right: -140px;
+          .innerChart {
+              position: absolute;
+              width: 228px;
+              height: 102px;
+              overflow: hidden;
+              left: 117px;
+              top: 60px;
+              p {
+                  color: #fff;
+                  font-size: 18px;
+                  line-height: 24px;
+              }
+          }
+          .prve {
+              width: 85px;
+              height: 30px;
+              position: absolute;
+              background: url(../../images/img7.png) no-repeat;
+              left: 154px;
+              bottom: 39px;
+              cursor: pointer;
+          }
+          .next {
+              width: 85px;
+              height: 30px;
+              position: absolute;
+              right: 60px;
+              bottom: 48px;
+              cursor: pointer;
+              background: url(../../images/img7.png) no-repeat 0 -82px;
+          }
+      }
+  }

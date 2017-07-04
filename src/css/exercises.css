@@ -1,0 +1,57 @@
+body,div,p{ padding: 0; margin: 0; }
+body,html,.scene-main{ min-height: 100%; }
+body{-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -khtml-user-select: none; user-select: none;}
+.exercises-w1024{ background: #EFEFEF; }
+.exercises-w1024 .scene-main{margin:auto; overflow: hidden; position: relative;width: 1440px;}
+.exercises-w1024 .scene-main img{ margin-left: -0px;width: 100%;}
+
+.exercises-scene1{ background: url("../../images/img6.png") repeat-x 0 0 #EFEFEF; }
+.exercises-scene2{ background: url("../../images/img10.png") repeat-x 0 0 #D6D6D6; }
+.exercises-scene3{ background: url("../../images/img6.png") repeat-x 0 0 #fff; }
+.exercises-scene4{ background: url("../../images/img11.png") repeat-x 0 0 #E5E5E5; }
+.exercises-scene1 .scene-main{ width: 1260px; margin: 0 auto; overflow: hidden; position: relative; }
+.exercises-scene1 .scene-main img{ margin-left: -57px; }
+.exercises-scene2 .scene-main{ width: 1260px; margin: 0 auto; overflow: hidden; position: relative; }
+.exercises-scene2 .scene-main img{ margin-left: -57px; }
+.exercises-scene3 .scene-main{ width: 1210px; margin: 0 auto; overflow: hidden; position: relative; }
+.exercises-scene3 .scene-main img{ margin-left: -107px; }
+.exercises-scene4 .scene-main{ width: 1210px; margin: 0 auto; overflow: hidden; position: relative; }
+.exercises-scene4 .scene-main img{ margin-left: -107px; }
+.exercises-dialog{ z-index: 2000;/* margin-top: -100px;*/ position: fixed; top: 50%; left: 50%;/* margin-left: -280px;*/ padding-left: 250px; min-height: 400px; background: url("../../images/img13.png") no-repeat 0 0; }
+.exercises-dialog .dialog-inner{ position: absolute; top: -110px; left: 140px; width: 228px; height: 142px; padding: 45px 36px 88px 122px; background: url("../../images/img12.png") no-repeat 0 0; }
+.exercises-dialog .dialog-content{ height: 100%; font-size: 18px; color: #fff; font-family: '微软雅黑'; line-height: 1.7em; overflow: hidden; }
+.exercises-dialog .dialog-tool{ position: absolute; right: 50px; top: 190px; }
+.exercises-dialog .dialog-tool .dialog-btn{ margin-left: 18px; color: #FF8347; font-size: 12px; cursor: pointer; display: inline-block; height: 28px; width: 74px; line-height: 9; overflow: hidden; background: url("../../images/img7.png") no-repeat; }
+.exercises-dialog .dialog-tool .dialog-prev{ background-position: 50% 0; }
+.exercises-dialog .dialog-tool .dialog-next{ background-position: 50% -90px; }
+.exercises-dialog .dialog-tool .dialog-repeat{ background-position: 50% -30px; }
+.exercises-dialog .dialog-tool .dialog-open{ background-position: 50% -60px; }
+.exercises-dialog1{ z-index: 2000;/* margin-top: 10px;*/ position: fixed; top: 20%; left: 50%; /*margin-left: -280px;*/ padding-right: 222px; min-height: 400px; background: url("../../images/img15.png") no-repeat right 0; }
+.exercises-dialog1 .dialog-inner{ margin-left: 24px; margin-top: 25px; width: 217px; height: 142px; padding: 48px 145px 86px 35px; background: url("../../images/img14.png") no-repeat 0 0; }
+.exercises-dialog1 .dialog-content{ height: 100%; font-size: 18px; color: #fff; font-family: '微软雅黑'; line-height: 1.7em; overflow: hidden; }
+.exercises-dialog1 .dialog-tool{ position: absolute; right: 320px; top: 60px; }
+.exercises-dialog1 .dialog-tool .dialog-btn{ margin-left: 18px; color: #FF8347; font-size: 12px; cursor: pointer; display: inline-block; height: 28px; width: 74px; line-height: 9; overflow: hidden; background: url("../../images/img7.png") no-repeat;margin-top: 155px; }
+.exercises-dialog1 .dialog-tool .dialog-prev{ background-position: 50% 0; }
+.exercises-dialog1 .dialog-tool .dialog-next{ background-position: 50% -90px; }
+.exercises-dialog1 .dialog-tool .dialog-repeat{ background-position: 50% -30px; }
+.exercises-dialog1 .dialog-tool .dialog-open{ background-position: 50% -60px; }
+.exercises-dialog-modal{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: .3; filter: alpha(opacity=30); }
+.exercises-pointer{ position: absolute; border: 2px solid transparent; cursor: pointer; background: url("../../images/img18.png") repeat 0 0; }
+.exercises-pointer-activity{ border-color: #FD5001; }
+.exercises-tiper{ border: 2px solid #FD5001; background: url("../../images/img9.png") repeat-x 0 100% #fff; position: absolute; padding: 12px; border-radius: 9px; }
+.exercises-tiper .angle{ display: inline-block; position: absolute; background: url("../../images/img3.png"); }
+.exercises-tiper-top{ margin-top: 12px; }
+.exercises-tiper-top .angle{ width: 24px; height: 12px; left: 50%; margin-left: -12px; top: -12px; background-position: 50% 0; }
+.exercises-tiper-bottom .angle{ width: 24px; height: 12px; left: 50%; margin-left: -12px; bottom: -12px; background: url("../../images/img19.png") no-repeat 50% 100%; }
+.exercises-tiper-right .angle{ height: 24px; width: 12px; top: 50%; margin-top: -12px; right: -12px; background: url("../../images/img20.png") no-repeat 100% 50%; }
+.exercises-tiper-leftTop{ margin-top: 12px; }
+.exercises-tiper-leftTop .angle{ width: 24px; height: 12px; left: 24px; top: -12px; background-position: 50% 0; }
+.exercises-tiper-leftBottom .angle{ width: 24px; height: 12px; left: 22px; bottom: -12px; background-position: 50% 100%; }
+.exercises-highlight{ margin: 2px; position: relative; }
+.exercises-highlight b{ display: block; position: absolute; }
+.exercises-highlight .highlight-top{ top: -2px; }
+.exercises-highlight .highlight-bottom{ bottom: 0; }
+.exercises-highlight .highlight-left{ left: -2px; }
+.exercises-highlight .highlight-right{ right: 0; }
+.exercises-highlight .highlight-top,.highlight-bottom{ width: 100%; height: 2px; background: url("../../images/img16.gif") repeat-x 0 0; }
+.exercises-highlight .highlight-left,.highlight-right{ height: 100%; width: 2px; background: url("../../images/img17.gif") repeat-y 0 0; }

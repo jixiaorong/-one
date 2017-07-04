@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>机智软件·区间交易</title>
+    <link rel="stylesheet" href="./src/css/exercises.css">
+    <script src="./src/js/jquery-3.2.1.min.js"></script>
+    <script src="./src/js/exercises.js"></script>
+    <script>
+        $(function () {
+           var _scene=$('.scene-main');
+            _scene.dialog({show : false});
+            _scene.dialog("setClassName", 'exercises-dialog',398,632);
+            $.Player([
+                function(){
+                    _scene.dialog('open');
+                    _scene.dialog('setContent','均线交易为趋势跟踪模型（与区间交易这种震荡模型正好互补）,是日常看盘的过程中必不可少的一个关注点。');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                               $.Player.nextFrame();
+                                //  $.Player.targetFrame(17)
+                            }
+                        }
+                    ]);
+                },
+                function(){
+                    _scene.dialog('setContent','机智2.5软件基于对股市的技术分析，研究出了一套以均线为核心的交易体系，帮助股民实现自动化、无人值守的均线交易。');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                },
+                  function(){
+                       _scene.dialog("setClassName", 'exercises-dialog1',306,621);
+                    _scene.dialog('setContent','设置均线交易（<a href="http://www.jz51598.com/vid07.html" style="color:blue" target="_blank">何为均线交易？</a>）');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                },
+                function(){
+                    _scene.dialog("setClassName", 'exercises-dialog',398,632);
+                    $('.scene-main>img').prop('src','./images/macd/3均线交易2.png');
+                    _scene.dialog('setContent','首先，在高级功能下的"更多"找到均线交易。');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                },
+                function () {
+                    _scene.dialog("setClassName", 'exercises-dialog1',270,991);
+                    $('.scene-main>img').prop('src','./images/macd/4均线交易3.png');
+                    _scene.dialog('setContent','这里填写股票名称，可以是股票拼音或者股票代码。');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                    _scene.removeHighlight().highlight({
+                        'left' :468,
+                        'top' : 182,
+                        'width' : 460,
+                        'height' : 42,
+                        'background-position' : '-473px -192px'
+                    });
+                },
+                function () {
+                    $('.scene-main>img').prop('src','./images/macd/5均线交易填股票代码1.png');
+                    _scene.dialog('setContent','填写股票代码(以600123“兰花科创”为例）');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                    _scene.removeHighlight().highlight({
+                        'left' : 466,
+                        'top' : 227,
+                        'width' : 162,
+                        'height' : 145,
+                        'background-position' : '-473px -229px'
+                    });
+                },
+                function () {
+                    _scene.dialog("setClassName", 'exercises-dialog1',270,991);
+                    $('.scene-main>img').prop('src','./images/macd/7设置交易逻辑1（均线）.png');
+                    _scene.dialog('setContent','设置交易逻辑（选择监控的对象，“股价/均线”。这里以均线为例。）');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                    _scene.removeHighlight().highlight({
+                        'left' : 468,
+                        'top' : 232,
+                        'width' : 146,
+                        'height' : 75,
+                        'background-position' : '-473px -232px'
+                    });
+                },
+                function () {
+                    _scene.dialog("setClassName", 'exercises-dialog1',270,991);
+                     $('.scene-main>img').prop('src','./images/macd/8设置交易逻辑2（均线）.png');
+                    _scene.dialog('setContent','<p style="text-align: center">选择均线会弹出一个均线设置框，选择X日均线“上穿/下破”X日均线。例:5日均线上穿10日均线。</p>');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        
+                        }
+                    ]);
+                    _scene.removeHighlight().highlight({
+                        'left' : 677,
+                        'top' : 226,
+                        'width' : 437,
+                        'height' : 83,
+                        'background-position' : '-678px -227px'
+                    });
+                },
+                function () {
+                    _scene.dialog("setClassName", 'exercises-dialog1',270,991);
+                     $('.scene-main>img').prop('src','./images/macd/10设置同时满足2.png');
+                    _scene.dialog('setContent','勾选是否设置“同时满足”10日均线呈“上升/下降” 趋势（例:“10日均线呈上升趋势”）');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                    _scene.removeHighlight().highlight({
+                        'left' : 469,
+                        'top' : 264,
+                        'width' : 628,
+                        'height' : 83,
+                        'background-position' : '-470px -267px'
+                    });
+                },
+
+                function () {
+                     _scene.dialog("setClassName", 'exercises-dialog1',502,991);
+                      $('.scene-main>img').prop('src','./images/macd/11均线交易.png');
+                    _scene.dialog('setContent','选择交易方式“金额”或“股票数”并手动填写买入数量或勾选自动分配');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                    _scene.removeHighlight().highlight({
+                        'left' : 468,
+                        'top' : 303,
+                        'width' : 637,
+                        'height' : 42,
+                        'background-position' : '-469px -306px'
+                    });
+                },
+                function () {
+                    _scene.dialog('setContent','如果点击“全部”则全部买入“最大可买”。勾选“1/2”则买入“最大可买”的二分之一数量，以此类推');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                    _scene.removeHighlight().highlight({
+                        'left' : 840,
+                        'top' : 346,
+                        'width' : 61,
+                        'height' : 39,
+                        'background-position' : '-840px -346px'
+                    });
+                    _scene.highlight({
+                       'left' : 423,
+                        'top' : 389,
+                        'width' : 637,
+                        'height' : 26,
+                        'background-position' : '-423px -389px'
+                    });
+                },
+                function () {
+                _scene.dialog('setContent','设置交易时的挂单价格档位');
+                _scene.dialog('setButton',[
+                    {
+                        name : 'prev',
+                        text : '上一步',
+                        eventFun : function(){
+                            $.Player.prevFrame();
+                        }
+                    },
+                    {
+                        name : 'next',
+                        text : '下一步',
+                        eventFun : function(){
+                            $.Player.nextFrame();
+                        }
+                    }
+                ]);
+                _scene.removeHighlight().highlight({
+                    'left' : 468,
+                    'top' : 411,
+                    'width' : 637,
+                    'height' : 42,
+                    'background-position' : '-468px -413px'
+                });
+            },
+                function () {
+                    _scene.dialog('setContent','设置任务的监控时间');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                     _scene.removeHighlight().highlight({
+                     'left' : 468,
+                    'top' : 453,
+                    'width' : 637,
+                    'height' : 42,
+                    'background-position' : '-468px -455px'
+                     });
+                },
+                function () {
+                    // _scene.dialog("setClassName", 'exercises-dialog1',420,574);
+                    _scene.dialog('setContent','是否开启循环任务(如勾选，此次任务为买入任务则该任务结束后自动设置卖出任务，反之！)');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                     _scene.removeHighlight().highlight({
+                     'left' : 273,
+                     'top' : 500,
+                     'width' : 94,
+                     'height' : 39,
+                     'background-position' : '-273px -500px'
+                     });
+                },
+  function () {
+                     $('.scene-main>img').prop('src','./images/macd/12设置均线循环任务.png');
+                    _scene.dialog('setContent','设置循环任务的参数');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                     _scene.removeHighlight().highlight({
+                     'left' : 253,
+                     'top' : 500,
+                     'width' : 558,
+                     'height' : 261,
+                     'background-position' : '-255px -500px'
+                     });
+                },
+   function () {
+                     _scene.dialog("setClassName", 'exercises-dialog',308,387);
+                     $('.scene-main>img').prop('src','./images/macd/13均线交易.png');
+                    _scene.dialog('setContent','如果买入任务，必须勾选买入任务，卖出任务，必须勾选卖出任务');
+                    _scene.dialog('setButton',[
+                        {
+                            name : 'prev',
+                            text : '上一步',
+                            eventFun : function(){
+                                $.Player.prevFrame();
+                            }
+                        },
+                        {
+                            name : 'next',
+                            text : '下一步',
+                            eventFun : function(){
+                                $.Player.nextFrame();
+                            }
+                        }
+                    ]);
+                     _scene.removeHighlight().highlight({
+                     'left' : 475,
+                     'top' : 498,
+                     'width' : 626,
+                     'height' : 51,
+                     'background-position' : '-478px -498px'
+                     });
+                },
+          
+             
+                function(){
+                    _scene.dialog('close');
+                    _scene.removeHighlight();
+                    _scene.pointer({
+                        left : 1042,
+                        top : 582,
+                        height: 38,
+                        width: 367,
+                        target : 'http://jz5158.com'
+                    });
+                    _scene.tiper({
+                        left: 1164,
+                        top: 619,
+                        content : '确认添加任务'
+                    });
+                },
+            ]);
+            $.Player.targetFrame($.Player.getFrame());
+        })
+    </script>
+</head>
+<body class="exercises-w1024">
+<div class="scene-main">
+    <img src="./images/macd/1主界面.png" />
+</div>
+</body>
+<script>
+    var beiliang=function () {
+        var text=$('<div id="beiL" style="width: 1313px;height: 700px;background: white;position: absolute;z-index: 1000000;top: 0;left: 0;right: 0;bottom: 0;margin: auto">' +
+            '<a href="javascript:close()" id="bl" style="position: absolute;top: 0;right: 0;color:white;background: darkred;display: inline-block;width: 40px;line-height: 32px;text-align: center;text-decoration: none;">关闭</a>' +
+            '<div id="beiLcon"></div>' +
+            '</div>');
+        $('#beiLcon').html()?$('#beiL').show():text.find('#beiLcon').load('./page/beiliang.html').end().appendTo('body');
+    };
+    var close=function () {
+        $('#beiL').hide();
+    }
+</script>
+</html>
